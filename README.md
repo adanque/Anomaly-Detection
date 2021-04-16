@@ -100,7 +100,7 @@ Package               Version
 ### Data Sources
 | Source  | Description | URL |
 | ------ | ------ | ------ |
-| Kaggle | Orange Telecom Dataset | https://www.kaggle.com/mnassrib/telecom-churn-datasets | 
+| Kaggle | Credit Card Fraud Detection Dataset | https://www.kaggle.com/mlg-ulb/creditcardfraud | 
 
 
 
