@@ -60,7 +60,10 @@ Package               Version
 
 | File Name  | Description |
 | ------ | ------ |
-| ExploratoryDataAnalysisReview.py | Data Reviews, Exploratory Analysis and Data Wrangling |
+| AnomalyDetectionEDA.py | Data Reviews, Exploratory Analysis and Data Wrangling |
+| AnomalyDetectionGraphs.py | Data Visualizations |
+| AnomalyDetectionModelPredict.py | Model Evaluation |
+| pyCaretTest.py | pyCaret Model Testing |
 
 ## Datasets
 | File  | Description |
@@ -68,6 +71,8 @@ Package               Version
 | creditcard.csv | Credit Card Fraud Dataset | 
 
 ## Analyses
+
+![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/Fraud_Detection_Distribution.png?raw=true)
 
 ### Metrics Evaluation and Observations
 
