@@ -48,15 +48,12 @@ Payments using credit cards is one of the most convenient ways to pay for produc
 ##  Project Variables / Factors 
 ### Project Dataset:
 - Type:		CSV
-- Columns: 	
-- Rows:		
+- Columns: 	31
+- Rows:		284,807
 
  | Feature / Factors | Data Type | Definition | 
  | --------- | --------- | --------- | 
  | State | string | State Abbreviation | 
-
-
-
 
 
 ## Pythonic Libraries Used in this project
@@ -75,6 +72,8 @@ Package               Version
 - PyYAML                5.4.1
 - SQLAlchemy            1.4.2
 - seaborn               0.11.1
+- pycaret
+
 
 ## Repo Folder Structure
 
@@ -102,14 +101,6 @@ Package               Version
 
 ![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/Fraud_Detection_Distribution.png?raw=true)
 
-![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/PCA_Cumulative_Explained_Variance.png?raw=true)
-
-![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/Inertia_Elbow_Identification_Plot.png?raw=true)
-
-![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/CreditCard_Anomaly_Detection_Correlation_Matrix.png?raw=true)
-
-![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/Principal_Component_Scatter_Plot.png?raw=true)
-
 ![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/BoxPlot_V4_V11_Anomaly_Detection.png?raw=true)
 
 ![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/BoxPlot_V2_V21_Anomaly_Detection.png?raw=true)
@@ -124,7 +115,24 @@ Package               Version
 
 ![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/Scatterplot_V4_V11_Anomaly_Detection.png?raw=true)
 
+### Variable Correlation Reviews
+
+![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/CreditCard_Anomaly_Detection_Correlation_Matrix.png?raw=true)
+
+
+### Principal Component Analysis
+
+![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/PCA_Cumulative_Explained_Variance.png?raw=true)
+
+![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/Inertia_Elbow_Identification_Plot.png?raw=true)
+
+![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/Principal_Component_Scatter_Plot.png?raw=true)
+
 ![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/PCA_Heatmap.png?raw=true)
+
+
+### Metrics Evaluation and Observations
+
 
 ![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/PrecisionVsRecallAU.png?raw=true)
 
@@ -142,24 +150,8 @@ Package               Version
 
 ![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/ModelTesting7.png?raw=true)
 
-### Metrics Evaluation and Observations
-
-
-
-### Variable Correlation Reviews
-
-
-
-
-### Principal Component Analysis
-
-
-
-
 
 ### Prediction
-
-
 
 
 
