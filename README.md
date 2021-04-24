@@ -138,43 +138,65 @@ Package               Version
 ## Analyses
 
 ![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/Fraud_Detection_Distribution.png?raw=true)
+Imbalanced Churn Dataset
 
 ### Principal Component Analysis
 
 ![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/PCA_Cumulative_Explained_Variance.png?raw=true)
+The above indicates that 4-5 components can explain 90% of data variances.
 
 ![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/Inertia_Elbow_Identification_Plot.png?raw=true)
+The k means inertia elbow graph above indicates that my dataset can be 
+optimally clustered into 4-5 groups.
+
+
 
 ### Variable Correlation Reviews
 
 ![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/CreditCard_Anomaly_Detection_Correlation_Matrix.png?raw=true)
+I found that if I export the correlation matrix to csv and then sort the feature correlation values by Class.
+	
 
 
 ![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/CorrelationDataframeOutput.png?raw=true)
 
 ![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/CorrelationDataframeOutputSummary.png?raw=true)
+I can easily obtain the top 4 correlated features I can use in my predictive model. 
+Note: The number 4 was obtained from the PCA Cumulative Explained Variance above.
 
 
 ![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/Principal_Component_Scatter_Plot.png?raw=true)
-
-![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/PCA_Heatmap.png?raw=true)
-
-
+Notice the proximity indicating correlations between the clustered features marked in black and one in the red group. This aligns with the 4 features identified earlier per V2, V4, V11 and V21.
 
 
 ![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/BoxPlot_V4_V11_Anomaly_Detection.png?raw=true)
+Notice the easy to find outliers on the V11 boxplot for Churn class of 1.
+
 
 ![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/BoxPlot_V2_V21_Anomaly_Detection.png?raw=true)
+The above graph also shows an interesting amount of outlier for component V21.
+
+
+
 
 ![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/Scatterplot_V11_V21_Anomaly_Detection.png?raw=true)
+The above scatter plot displays some specific indicator in red - that can help assist with possible churn customers.
 
 ![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/Scatterplot_V4_V21_Anomaly_Detection.png?raw=true)
+The above scatter plot displays some specific indicator that can help assist with possible churn customers.
 
 ![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/Scatterplot_V2_V4_Anomaly_Detection.png?raw=true)
+The above scatter plot does a better job of identifying likely churn customers as noted in the red markers
 
 ![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/Scatterplot_V2_V21_Anomaly_Detection.png?raw=true)
+The above scatter plot displays some specific indicator that can help assist with possible churn customers.
 
 ![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/Scatterplot_V4_V11_Anomaly_Detection.png?raw=true)
+The above scatter plot appears to do the best job of identifying likely churn customers. Notice the obvious red grouping outside of those who do not churn in blue.
+
+
+![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/PCA_Heatmap.png?raw=true)
+
 
 
 
@@ -182,6 +204,8 @@ Package               Version
 
 
 ![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/PrecisionVsRecallAU.png?raw=true)
+
+
 
 ![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/ModelTesting1.png?raw=true)
 
