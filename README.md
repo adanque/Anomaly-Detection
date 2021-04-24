@@ -84,6 +84,14 @@ Payments using credit cards is one of the most convenient ways to pay for produc
  | Amount | Transaction Amount | 
  | Class | 1 for fraud, 0 for normal | 
 
+## Methods used
+1.	The Pandas profiling library to assist with generating graphs for exploring the distribution of my data and identify possible fields that need cleaning or removal.
+2.	Generate and review performance metrics from my data using AUC score and correlation matrix.
+3.	Create filtered sets of my dataset based on the target label and generate correlation matrices of each. List out all the observational differences from the two filtered reviews. And generate supportive plots where possible.
+4.	Split my dataset using sklearn model_selection train_test_split or kfold.
+5.	Perform principal component analysis to reduce dimensionality of my large dataset and analyze. To Identify components that contribute to my prediction goals.
+6.	Use the algorithms: Local outlier factor, One Class SVM, Isolation Forest and Elliptic Envelop to attempt to make predictions.
+7.	Review and measure the results of the prediction using a r2 score, mae, mse and rmse.
 
 
 ## Pythonic Libraries Used in this project
@@ -131,6 +139,29 @@ Package               Version
 
 ![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/Fraud_Detection_Distribution.png?raw=true)
 
+### Principal Component Analysis
+
+![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/PCA_Cumulative_Explained_Variance.png?raw=true)
+
+![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/Inertia_Elbow_Identification_Plot.png?raw=true)
+
+### Variable Correlation Reviews
+
+![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/CreditCard_Anomaly_Detection_Correlation_Matrix.png?raw=true)
+
+
+![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/CorrelationDataframeOutput.png
+
+![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/CorrelationDataframeOutputSummary.png
+
+
+![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/Principal_Component_Scatter_Plot.png?raw=true)?raw=true)
+
+![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/PCA_Heatmap.png?raw=true)?raw=true)
+
+
+
+
 ![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/BoxPlot_V4_V11_Anomaly_Detection.png?raw=true)
 
 ![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/BoxPlot_V2_V21_Anomaly_Detection.png?raw=true)
@@ -145,20 +176,6 @@ Package               Version
 
 ![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/Scatterplot_V4_V11_Anomaly_Detection.png?raw=true)
 
-### Variable Correlation Reviews
-
-![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/CreditCard_Anomaly_Detection_Correlation_Matrix.png?raw=true)
-
-
-### Principal Component Analysis
-
-![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/PCA_Cumulative_Explained_Variance.png?raw=true)
-
-![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/Inertia_Elbow_Identification_Plot.png?raw=true)
-
-![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/Principal_Component_Scatter_Plot.png?raw=true)
-
-![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/PCA_Heatmap.png?raw=true)
 
 
 ### Metrics Evaluation and Observations
