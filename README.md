@@ -10,11 +10,39 @@
 
 ## Abstract: 
 
-Under construction
+Payments using credit cards is one of the most convenient ways to pay for products or services. There are many monetary transactions can be completed all too easily with credit cards. With a simple swipe of a magnetic strip. Insert of a digital chip. Briefly passing a wireless RFID scanner. Voicing one’s credit card numbers over the telephone. Saving the credentials on a browser. A credit card customer can purchase anything. From a small pack of gum from a gas station to airline tickets at the airport. To buying electronic goods from a nearby Target store. With all these convenient ways to pay comes the opportunity for one’s credit card information to be stolen and then used to fraudulently be used to buy items they would normally not buy. According to the author Roman Chuprina, “Unauthorized card operations hit an astonishing amount of 16.7 million victims in 2017. Additionally, as reported by the Federal Trade Commission (FTC), the number of credit card fraud claims in 2017 was 40% higher than the previous year’s number. There were around 13,000 reported cases in California and 8,000 in Florida, which are the largest states per capita for such type of crime. The amount of money at stake will exceed approximately $30 billion by 2020.” (Chuprina, 2021) That is where anomaly detection for credit card fraud can come in. By analyzing the deviation between what is normal and expected behavior, it is possible to identify fraudulent purchases. (Vemula, 2020)
 
 ### Project Specific Questions
 
-
+- Since subscriptions are normally monthly with metrics collected once a month, will it be possible to identify churn in as little as a couple months?
+	- Answer: 
+	
+- What are the indicators that help identify dissatisfaction?
+	- Answer: 
+	
+- What are these factors that lead to loyalty?
+	- Answer: 
+	
+- Is there a way to identify dissatisfaction between monthly subscription payments?
+	- Answer: 
+	
+- Where can this data be derived from?
+	- Answer: 
+	
+- How can we identify how much churn affects the bottom line?
+	- Answer: 
+	
+- Can churn be prevented?
+	- Answer: 
+	
+- Are there indirect factors that lead to churn?
+	- Answer: 
+	
+- Are there an early detection sign?
+	- Answer: 
+	
+- Is there a way to show how much prevented churn has affected the bottom line of cash flow?
+	- Answer: 
 
 
 ##  Project Variables / Factors 
