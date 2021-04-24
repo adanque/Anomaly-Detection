@@ -51,9 +51,39 @@ Payments using credit cards is one of the most convenient ways to pay for produc
 - Columns: 	31
 - Rows:		284,807
 
- | Feature / Factors | Data Type | Definition | 
- | --------- | --------- | --------- | 
- | State | string | State Abbreviation | 
+ | Time | Number of seconds between the transactions in the dataset | 
+ | -------- | --------- |  
+ | V1 | PCA translated | 
+ | V2 | PCA translated | 
+ | V3 | PCA translated | 
+ | V4 | PCA translated | 
+ | V5 | PCA translated | 
+ | V6 | PCA translated | 
+ | V7 | PCA translated | 
+ | V8 | PCA translated | 
+ | V9 | PCA translated | 
+ | V10 | PCA translated | 
+ | V11 | PCA translated | 
+ | V12 | PCA translated | 
+ | V13 | PCA translated | 
+ | V14 | PCA translated | 
+ | V15 | PCA translated | 
+ | V16 | PCA translated | 
+ | V17 | PCA translated | 
+ | V18 | PCA translated | 
+ | V19 | PCA translated | 
+ | V20 | PCA translated | 
+ | V21 | PCA translated | 
+ | V22 | PCA translated | 
+ | V23 | PCA translated | 
+ | V24 | PCA translated | 
+ | V25 | PCA translated | 
+ | V26 | PCA translated | 
+ | V27 | PCA translated | 
+ | V28 | PCA translated | 
+ | Amount | Transaction Amount | 
+ | Class | 1 for fraud, 0 for normal | 
+
 
 
 ## Pythonic Libraries Used in this project
