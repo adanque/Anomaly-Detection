@@ -6,9 +6,8 @@
 
 <a href="https://adanque.github.io/">Click here to go back to Portfolio Website </a>
 
-![A remote image](https://adanque.github.io/assets/img/Detection.jpg)
 <p align="center">
-  <img width="460" height="300" src="https://adanque.github.io/assets/img/Detection.jpg">
+  <img width="460" height="460" src="https://adanque.github.io/assets/img/Detection.jpg">
 </p>
 
 ## Abstract: 
