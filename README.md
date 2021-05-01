@@ -20,35 +20,37 @@ Payments using credit cards is one of the most convenient ways to pay for produc
 
 ### Project Specific Questions
 
-- Since subscriptions are normally monthly with metrics collected once a month, will it be possible to identify fraud in as little as a couple months?
-	- Answer: 
+- Since the credit card data may likely be streaming in real time, will it be possible to detect credit card fraud?
+	- Answer: Yes, given that this project was able to use one period of data it is still able to predict
 	
-- What are the indicators that help identify dissatisfaction?
-	- Answer: 
+- What visualizations can be used to help identify credit card fraud?
+	- Answer:
 	
-- What are these factors that lead to loyalty?
-	- Answer: 
+- What are the factors that can lead to credit card fraud?
+	- Answer:
 	
-- Is there a way to identify dissatisfaction between monthly subscription payments?
-	- Answer: 
+- Which algorithms can be used to detect credit card fraud?
+	- Answer:
 	
-- Where can this data be derived from?
-	- Answer: 
+- How many variables can be used to detect credit card fraud?
+	- Answer:
 	
-- How can we identify how much fraud affects the bottom line?
-	- Answer: 
+- Is it possible to accidentally mistaken a fraudulent credit card charge for a real charge?
+	- Answer:
 	
-- Can fraud be prevented?
-	- Answer: 
+- Are there any variables with multicollinearity?
+	- Answer:
 	
-- Are there indirect factors that lead to fraud?
-	- Answer: 
+- Can we still create a model if our dataset contains masked variables?
+	- Answer:
 	
-- Are there an early detection sign?
-	- Answer: 
+- How can we measure the accuracy of our detection models?
+	- Answer:
 	
-- Is there a way to show how much prevented fraud has affected the bottom line of cash flow?
-	- Answer: 
+- How accurate will the detection of credit card fraud be?
+	- Answer:
+
+
 
 
 ##  Project Variables / Factors 
