@@ -144,14 +144,17 @@ Package               Version
 ## Analyses
 
 ![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/Fraud_Detection_Distribution.png?raw=true)
+
 Imbalanced fraud Dataset
 
 ### Principal Component Analysis
 
 ![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/PCA_Cumulative_Explained_Variance.png?raw=true)
+
 The above indicates that 4-5 components can explain 90% of data variances.
 
 ![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/Inertia_Elbow_Identification_Plot.png?raw=true)
+
 The k means inertia elbow graph above indicates that my dataset can be 
 optimally clustered into 4-5 groups.
 
