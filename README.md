@@ -20,7 +20,7 @@ Payments using credit cards is one of the most convenient ways to pay for produc
 
 ### Project Specific Questions
 
-- Since subscriptions are normally monthly with metrics collected once a month, will it be possible to identify churn in as little as a couple months?
+- Since subscriptions are normally monthly with metrics collected once a month, will it be possible to identify fraud in as little as a couple months?
 	- Answer: 
 	
 - What are the indicators that help identify dissatisfaction?
@@ -35,19 +35,19 @@ Payments using credit cards is one of the most convenient ways to pay for produc
 - Where can this data be derived from?
 	- Answer: 
 	
-- How can we identify how much churn affects the bottom line?
+- How can we identify how much fraud affects the bottom line?
 	- Answer: 
 	
-- Can churn be prevented?
+- Can fraud be prevented?
 	- Answer: 
 	
-- Are there indirect factors that lead to churn?
+- Are there indirect factors that lead to fraud?
 	- Answer: 
 	
 - Are there an early detection sign?
 	- Answer: 
 	
-- Is there a way to show how much prevented churn has affected the bottom line of cash flow?
+- Is there a way to show how much prevented fraud has affected the bottom line of cash flow?
 	- Answer: 
 
 
@@ -59,34 +59,34 @@ Payments using credit cards is one of the most convenient ways to pay for produc
 
  | Time | Number of seconds between the transactions in the dataset | 
  | -------- | --------- |  
- | V1 | PCA translated | 
- | V2 | PCA translated | 
- | V3 | PCA translated | 
- | V4 | PCA translated | 
- | V5 | PCA translated | 
- | V6 | PCA translated | 
- | V7 | PCA translated | 
- | V8 | PCA translated | 
- | V9 | PCA translated | 
- | V10 | PCA translated | 
- | V11 | PCA translated | 
- | V12 | PCA translated | 
- | V13 | PCA translated | 
- | V14 | PCA translated | 
- | V15 | PCA translated | 
- | V16 | PCA translated | 
- | V17 | PCA translated | 
- | V18 | PCA translated | 
- | V19 | PCA translated | 
- | V20 | PCA translated | 
- | V21 | PCA translated | 
- | V22 | PCA translated | 
- | V23 | PCA translated | 
- | V24 | PCA translated | 
- | V25 | PCA translated | 
- | V26 | PCA translated | 
- | V27 | PCA translated | 
- | V28 | PCA translated | 
+ | V1 | PCA translated by dataset owner |  
+ | V2 | PCA translated by dataset owner |  
+ | V3 | PCA translated by dataset owner |  
+ | V4 | PCA translated by dataset owner |  
+ | V5 | PCA translated by dataset owner |  
+ | V6 | PCA translated by dataset owner |  
+ | V7 | PCA translated by dataset owner |  
+ | V8 | PCA translated by dataset owner |  
+ | V9 | PCA translated by dataset owner |  
+ | V10 | PCA translated by dataset owner |  
+ | V11 | PCA translated by dataset owner |  
+ | V12 | PCA translated by dataset owner |  
+ | V13 | PCA translated by dataset owner |  
+ | V14 | PCA translated by dataset owner |  
+ | V15 | PCA translated by dataset owner |  
+ | V16 | PCA translated by dataset owner |  
+ | V17 | PCA translated by dataset owner |  
+ | V18 | PCA translated by dataset owner |  
+ | V19 | PCA translated by dataset owner |  
+ | V20 | PCA translated by dataset owner |  
+ | V21 | PCA translated by dataset owner |  
+ | V22 | PCA translated by dataset owner |  
+ | V23 | PCA translated by dataset owner |  
+ | V24 | PCA translated by dataset owner |  
+ | V25 | PCA translated by dataset owner |  
+ | V26 | PCA translated by dataset owner |  
+ | V27 | PCA translated by dataset owner |  
+ | V28 | PCA translated by dataset owner |  
  | Amount | Transaction Amount | 
  | Class | 1 for fraud, 0 for normal | 
 
@@ -144,7 +144,7 @@ Package               Version
 ## Analyses
 
 ![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/Fraud_Detection_Distribution.png?raw=true)
-Imbalanced Churn Dataset
+Imbalanced fraud Dataset
 
 ### Principal Component Analysis
 
@@ -160,6 +160,7 @@ optimally clustered into 4-5 groups.
 ### Variable Correlation Reviews
 
 ![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/CreditCard_Anomaly_Detection_Correlation_Matrix.png?raw=true)
+
 I found that if I export the correlation matrix to csv and then sort the feature correlation values by Class.
 	
 
@@ -167,38 +168,47 @@ I found that if I export the correlation matrix to csv and then sort the feature
 ![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/CorrelationDataframeOutput.png?raw=true)
 
 ![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/CorrelationDataframeOutputSummary.png?raw=true)
+
 I can easily obtain the top 4 correlated features I can use in my predictive model. 
 Note: The number 4 was obtained from the PCA Cumulative Explained Variance above.
 
 
 ![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/Principal_Component_Scatter_Plot.png?raw=true)
+
 Notice the proximity indicating correlations between the clustered features marked in black and one in the red group. This aligns with the 4 features identified earlier per V2, V4, V11 and V21.
 
 
 ![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/BoxPlot_V4_V11_Anomaly_Detection.png?raw=true)
-Notice the easy to find outliers on the V11 boxplot for Churn class of 1.
+
+Notice the easy to find outliers on the V11 boxplot for fraud class of 1.
 
 
 ![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/BoxPlot_V2_V21_Anomaly_Detection.png?raw=true)
+
 The above graph also shows an interesting amount of outlier for component V21.
 
 
 
 
 ![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/Scatterplot_V11_V21_Anomaly_Detection.png?raw=true)
-The above scatter plot displays some specific indicator in red - that can help assist with possible churn customers.
+
+The above scatter plot displays some specific indicator in red - that can help assist with possible fraud customers.
 
 ![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/Scatterplot_V4_V21_Anomaly_Detection.png?raw=true)
-The above scatter plot displays some specific indicator that can help assist with possible churn customers.
+
+The above scatter plot displays some specific indicator that can help assist with possible fraud customers.
 
 ![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/Scatterplot_V2_V4_Anomaly_Detection.png?raw=true)
-The above scatter plot does a better job of identifying likely churn customers as noted in the red markers
+
+The above scatter plot does a better job of identifying likely fraud customers as noted in the red markers
 
 ![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/Scatterplot_V2_V21_Anomaly_Detection.png?raw=true)
-The above scatter plot displays some specific indicator that can help assist with possible churn customers.
+
+The above scatter plot displays some specific indicator that can help assist with possible fraud customers.
 
 ![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/Scatterplot_V4_V11_Anomaly_Detection.png?raw=true)
-The above scatter plot appears to do the best job of identifying likely churn customers. Notice the obvious red grouping outside of those who do not churn in blue.
+
+The above scatter plot appears to do the best job of identifying likely fraud customers. Notice the obvious red grouping outside of those who do not fraud in blue.
 
 
 ![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/PCA_Heatmap.png?raw=true)
