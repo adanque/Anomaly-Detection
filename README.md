@@ -24,31 +24,31 @@ Payments using credit cards is one of the most convenient ways to pay for produc
 	- Answer: Yes, given that this project was able to use one period of data it is still able to predict
 	
 - What visualizations can be used to help identify credit card fraud?
-	- Answer:
+	- Answer: The visualizations that I found are helpful with identifying credit card fraud are boxplots and scatterplots.
 	
 - What are the factors that can lead to credit card fraud?
-	- Answer:
+	- Answer: Since my variables were PCA translated by the provider of the dataset, I was able to use the resulting data frame export from the correlation matrix to find that my variables V4, V11, V2 and V21 are factors that lead to credit card fraud.
 	
 - Which algorithms can be used to detect credit card fraud?
-	- Answer:
+	- Answer: After having tested many algorithms, my tests found that ExtraTreesClassifier was the best algorithm for my model.
 	
 - How many variables can be used to detect credit card fraud?
-	- Answer:
+	- Answer: Using the elbow method with a PCA Cumulative Explained Variance plot, I found that 4 components explain 90% of the variance in my dataset. 
 	
 - Is it possible to accidentally mistaken a fraudulent credit card charge for a real charge?
-	- Answer:
+	- Answer: Although my test measures per accuracy, recall & precision therefore F1 score are respectively a little higher than 99%, between 72-88% and about 85% there is a low possibility of the model accidentally identifying a normal charge with a  fraudulent charge.
 	
 - Are there any variables with multicollinearity?
-	- Answer:
+	- Answer: Yes as can seen in the correlation matrix there appears to be multicollinearity with variables V1 & V2, V6 & V7 and V8 , V11 & V12, V21 & V22, V27 & V28.
 	
 - Can we still create a model if our dataset contains masked variables?
-	- Answer:
+	- Answer: Absolutely, in this project I was able to make accurate predictions - even though the labels for most of the variables were masked. However, the was able to do so since the target response variable was available.	
 	
 - How can we measure the accuracy of our detection models?
-	- Answer:
+	- Answer: In this project, I was able to use a variety of measures. These include, MAE, MSE, RMSE, r2 Score, F1 Score and perform pipeline validations tests of predicted values.
 	
 - How accurate will the detection of credit card fraud be?
-	- Answer:
+	- Answer: It can be as accurate as higher than 99%.
 
 
 
@@ -134,9 +134,10 @@ Package               Version
 | File Name  | Description |
 | ------ | ------ |
 | AnomalyDetectionEDA.py | Data Reviews, Exploratory Analysis and Data Wrangling |
-| AnomalyDetectionGraphs.py | Data Visualizations |
-| AnomalyDetectionModelPredict.py | Model Evaluation |
-| pyCaretTest.py | pyCaret Model Testing |
+| AnomalyDetectionVisualizationGraphs.py | Data Visualizations |
+| AnomalyDetectionModelEvaluation.py | Model Evaluation |
+| AnomalyDetectionPredict.py | Model Prediction |
+| pyCaretTest.py | pyCaret Model Testing and Evaluation for the best algorithm|
 
 ## Datasets
 | File  | Description |
