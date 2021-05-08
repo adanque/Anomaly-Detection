@@ -218,10 +218,6 @@ The above scatter plot displays some specific indicator that can help assist wit
 The above scatter plot appears to do the best job of identifying likely fraud customers. Notice the obvious red grouping outside of those who do not fraud in blue.
 
 
-![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/PCA_Heatmap.png?raw=true)
-
-
-
 
 ### Metrics Evaluation and Observations
 
