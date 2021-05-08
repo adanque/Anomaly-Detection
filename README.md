@@ -245,7 +245,13 @@ The above scatter plot appears to do the best job of identifying likely fraud cu
 ![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/ROC_Curve_Precision_vs_Recall.png?raw=true)
 
 
-### Visualization of our new model.
+### Decision Tree Visualization of our new model.
+
+## Zoomed view 
+
+![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/PredictionPipeLineTreeZoomed.png?raw=true)
+
+## Full Model
 
 ![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/PredictionPipeLineTree.png?raw=true)
 
