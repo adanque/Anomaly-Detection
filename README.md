@@ -223,37 +223,72 @@ The above scatter plot appears to do the best job of identifying likely fraud cu
 
 ![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/ModelTesting1.png?raw=true)
 
+Out of the 5 algorithms, I found that the Isolation Forest algorithm had the best MAE: of .002, MSE: .002 which highlights the accuracy by way of measuring how far our prediction came from the actual values. However, the r2 score for Isolation Forest only came backup with .027 which is very weak to explain variances in our dependent variable due to variability of our independent variables.
+
+The second-best algorithm was LinearRegression per MAE of .003 and MSE of .001. However, the r2 score was moderately good with a .468. Meaning it was better at explaining variances.
+
+I later added an algorithm review using PyCaret to test more algorithms for the best performance.
+
+
+### PyCaret Model Review
+
+![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/pyCaret1.png?raw=true)
+
+PyCaret evaluations between algorithms: Logistic Regression, K Nearest Neighbors, Naïve Bayes and Decision Tree Classifier.  
+
+
 ![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/ModelTesting2.png?raw=true)
+
+During the first phases of evaluations we can see K Nearest Neighbors leads in both Accuracy and Precision however, the F1 score that combines an evaluation of both precision and recall is low.
 
 ![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/ModelTesting3.png?raw=true)
 
+As the PyCaret evaluation proceeds, I find it interesting how K Nearest Neighbors hangs in there with high precision while contending with algorithms: Ridge Classifier and Random Forest Classifier. Here we can see that as even more algorithms get added to the evaluation, K Nearest Neighbors continues to hold well to Precision despite not leading accuracy. We can see that the Random Forest Classifier and Ridge Classifier continues to comparatively run well against KNN.
+
 ![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/ModelTesting4.png?raw=true)
+
+Here we can see that KNN is getting surpassed by the algorithms: Random Forest Classifier and Extra Trees Classifier which is much like Random Forest.  With high Accuracy, AUC, Recall and Precision. 
 
 ![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/ModelTesting5.png?raw=true)
 
+Here we see an evaluation using the F1 to score the relationship of precision and recall, Kappa magnitude score to measure dichotomous agreement with a score higher than .76. And MCC - Mathew’s Correlation Coefficient that measures of .8585. One thing to note though, since we have an imbalanced dataset and F1 score is asymmetric by nature meaning it does not provide similar results if the classes are inverted thus F1 score alone my not be useful as a metric for my project. Another note on the MCC which is a symmetric metric that considers the TP/True Positives, FP/False Positives and FN/False Negatives. It indicates a better score in favor of Extra Trees.
+
 ![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/ModelTesting6.png?raw=true)
+
+Here we can see that the two algorithms: Random Forest Classifier and Extra Trees Classifier are neck and neck in accuracy and very comparable per AUC, Recall and Precision, Kappa and MCC. However, the training time for the Extra Trees Classifier is much better at 9.595 seconds vs 26.728 seconds for Random Forest Classifier.
 
 ![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/ModelTesting7.png?raw=true)
 
+Here my PyCaret evaluation has identified that the best algorithm for my project’s model is “Extra Trees Classifier”. 
 
-### Prediction
+
+### Prediction Pipeline Validation:
 
 ![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/PredictionPipeLine.png?raw=true)
 
+Here we will create a pipeline to feed in a series of values to simulate the input variables of our model and perform our prediction. Each prediction was completed as expected with the correct result using random test data.
+
 ![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/Precision_Recall_Curve.png?raw=true)
+
+The above Precision Recall Curve plots how well the prediction vs test values matched per TP/True Positives, FP/False Positives and FN/False Negatives. It was measured using Sklearn’s average_precision_score metric function.
 
 ![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/ROC_Curve_Precision_vs_Recall.png?raw=true)
 
+The above Precision vs Recall plot shows how well the prediction vs test values matched per TP/True Positives, FP/False Positives and FN/False Negatives using an area over the curve visualization. It uses Sklearn’s precision_recall_curve metric function.
 
 ### Decision Tree Visualization of our new model.
 
-## Zoomed view 
+
+
+## Full Visualization of the decision tree of my model.
+
+![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/PredictionPipeLineTree.png?raw=true)
+
+
+## Zoomed in view of the center of the decision tree. 
 
 ![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/PredictionPipeLineTreeZoomed.png?raw=true)
 
-## Full Model
-
-![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/PredictionPipeLineTree.png?raw=true)
 
 
 
