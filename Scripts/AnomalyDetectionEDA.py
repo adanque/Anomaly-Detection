@@ -1,7 +1,10 @@
+
+
+
 """
 Author: Alan Danque
 Date:   20210323
-Purpose:Preliminary Pandas Profiling for Telecom Churn Data
+Purpose:Preliminary Pandas Profiling for Fraud Data
 
 rows attributes
 ( , )
@@ -98,7 +101,7 @@ with open(ymlfile, 'r') as stream:
     except yaml.YAMLError as exc:
         print(exc)
 
-# Read in the Telecom Churn Data
+# Read in the Fraud Data
 data_df = pd.read_csv(data_file)
 
 print("DataFrame Shape")
@@ -112,7 +115,7 @@ print(data_df.isnull().values.any())
 print("summary")
 print(data_df.describe())
 
-print("Generate Pandas Profile for Telecom Churn Data")
+print("Generate Pandas Profile for FraudData")
 #bprof = ProfileReport(data_df)
 #bprof.to_file(output_file=pandasEDA)
 
@@ -162,13 +165,6 @@ plt.xlabel('Fraud')
 img_file = results_path.joinpath('Fraud_Detection_Distribution.png')
 plt.savefig(img_file)
 plt.show()
-
-
-
-y_true = np.array([0,0,0,0,0,1])
-y_scores = np.array([.5,.5,.5,.5,.5,.5])
-pr(y_true, y_scores)
-
 
 
 
@@ -314,4 +310,6 @@ SELECT * FROM data_df a
 ncdf = pysqldf(t)
 
 print("Complete Duration: --- %s seconds ---" % (time.time() - start_time))
+
+
 

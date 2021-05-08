@@ -226,8 +226,9 @@ The above scatter plot appears to do the best job of identifying likely fraud cu
 ### Metrics Evaluation and Observations
 
 
-![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/PrecisionVsRecallAU.png?raw=true)
+![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/Precision_Recall_Curve.png?raw=true)
 
+![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/ROC_Curve_Precision_vs_Recall.png?raw=true)
 
 
 ![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/ModelTesting1.png?raw=true)
