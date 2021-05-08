@@ -249,13 +249,17 @@ The above scatter plot appears to do the best job of identifying likely fraud cu
 ![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/ROC_Curve_Precision_vs_Recall.png?raw=true)
 
 
+### Visualization of our new model.
+
+![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/PredictionPipeLineTree.png?raw=true)
+
+
+
+
 ### Conclusion: 
 
 Credit card fraud is an extremely important issue as it devastates a person’s credit, violates their identity and privacy of their personal information. Here we learned that we can detect this type of anomaly to be sensitive to the variations in the features of one’s credit usage. And build a predictive model that has an accuracy greater than 99%.
 
-### Visualization of our new model.
-
-![A remote image](https://github.com/adanque/Anomaly-Detection/blob/main/Results/PredictionPipeLineTree.png?raw=true)
 
 ## Appendices
 ### Data Sources
