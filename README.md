@@ -93,13 +93,13 @@ Payments using credit cards is one of the most convenient ways to pay for produc
  | Class | 1 for fraud, 0 for normal | 
 
 ## Methods used
-1.	The Pandas profiling library to assist with generating graphs for exploring the distribution of my data and identify possible fields that need cleaning or removal.
-2.	Generate and review performance metrics from my data using AUC score and correlation matrix.
-3.	Create filtered sets of my dataset based on the target label and generate correlation matrices of each. List out all the observational differences from the two filtered reviews. And generate supportive plots where possible.
-4.	Split my dataset using sklearn model_selection train_test_split or kfold.
-5.	Perform principal component analysis to reduce dimensionality of my large dataset and analyze. To Identify components that contribute to my prediction goals.
-6.	Use the algorithms: Local outlier factor, One Class SVM, Isolation Forest and Elliptic Envelop to attempt to make predictions.
-7.	Review and measure the results of the prediction using a r2 score, mae, mse and rmse.
+1.	I used the Pandas profiling library to assist with generating graphs for exploring the distribution of my data and identify possible fields that need cleaning or removal.
+2.	I then generated plots to visualize the distribution of my data, PCA & Inertia plots to understand the grouping, correlation matrix to review relationships of my dataset’s fields, boxplots to analyze the outliers in my dataset and scatter plots to review the distributed spread of my normal and fraudulent classes.
+3.	Split my dataset using the sklearn RepeatedStratifiedKFold for model training.
+4.	Use the algorithms: Local outlier factor, One Class SVM, Isolation Forest and Elliptic Envelop to attempt to make predictions. Then to further increase specificity over sensitivity, I used pyCaret to help identify the best performing model.
+5.	Review and measure the performance of my predictive model using a Precision Recall, F1 Score, MCC, Kapp, r2 score, MAE, MSE, RMSE and the time to train.
+6.	Test and verify predictions of my model using test data.
+7.	Visualize the Decision Tree of my resulting model using scikit learn’s export_graphviz for model explain ability.
 
 
 ## Pythonic Libraries Used in this project
